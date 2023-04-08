@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GITHUB</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-md fixed-top bg-white sticky-top">
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="display: flexindex.html"
+              >Git y GitHub</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Multiples_Entornos.html"
+              >Multiples Entornos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="New_Repository.html">New Repository</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+      <h1>Git y GitHub</h1>
+      <ol>
+        <li>
+          para borrar un archivo <br />
+          <ul>
+            <li>git rm y nombre del archivo pero queda en catche</li>
+          </ul>
+        </li>
+        <li>
+          para borrar un archivo pero del catche que esta en staging
+          <ul>
+            <li>git rm --cached y nombre del archivo con la extension</li>
+          </ul>
+        </li>
+
+        <li>
+          para revisar la configuracion
+          <ul>
+            <li>git config</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          para la confiiguracion por defecto y lo que nos falta
+          <ul>
+            <li>con = git config --list</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          Para la ubicacion de la configuracion
+          <ul>
+            <li>git config --list --show-origin</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          para cambiar todos los usuarios globales
+          <ul>
+            <li>git config ---global</li>
+          </ul>
+        </li>
+        <br />
+        <!-- primer cambio-->
+        <li>
+          git log "nombre de archivo"
+          <ul>
+            <li>sirve para ver la historia de un archivo</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git show nombre del archivo
+          <ul>
+            <li>sirve para ver los cambios de un archivo</li>
+          </ul>
+        </li>
+        <br />
+
+        <li>
+          git branch
+          <ul>
+            <li>sirve para crear una rama</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git branch -d (nombre de la rama)
+          <ul>
+            <li>sirve para eliminar una rama la d es de delete</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git checkout
+          <ul>
+            <li>sirve para cambiar de ramas</li>
+          </ul>
+        </li>
+        <br />
+        <hr />
+        <p>
+          para salir de la interfaz del commit basta con apretar
+          <br />esc+shift+z+z, o q depende la interfaz
+        </p>
+        <hr />
+        <p>
+          <strong
+            >nuevo cambio de verificacion de un push cambio desde luis
+            aquino</strong
+          >
+        </p>
+        <hr />
+
+        <p style="color: steelblue; font-size: 1.2em">
+          Para crear un alias permanente Cambiar de bash en el code con <br />
+          <strong>Code .bashrc .zshrc</strong><br />
+          Ya que al usar oh-my-zsh se cambia de bash Ahí meter el alias asi:
+          <br />
+          <strong>Alias (nombre del alias)=’comando’</strong>
+        </p>
+        <hr />
+      </ol>
+      <h2>Tags y Versiones</h2>
+      <ol>
+        <li>
+          git log
+          <ul>
+            <li>
+              muestra el historial de los registros(commits) del proyecto con
+              sus respectivos autores, hora especifica y descripciones(en caso
+              de tenerlos)
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git log --all
+          <ul>
+            <li>muestra todo el historial de los registros del proyecto</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git log --all --graph
+          <ul>
+            <li>muestra con rayas las ramas</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git log --all --graph --decorate --oneline
+          <ul>
+            <li>
+              muestra todo el historial de los registro de todos los commits de
+              una forma grafica y ordenada
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          podemos meter el comando en un alias , alias historyg =
+          <strong>"git log --all --graph --decorate --oneline"</strong>
+          <ul>
+            <li>
+              establece un alias historyg para el comando puesto ahi para que
+              escribiendo historyg se ejecute el comando completo
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git log -$numero
+          <ul>
+            <li>muestra los ultimos $numero commits realizados</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git log --stat
+          <ul>
+            <li>
+              muestra los cambios especificos de cada archivo de acuerdo a los
+              commits
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git tag -a [v0.1] -m "mensaje" [codigo commit se saca en log]
+          <ul>
+            <li>
+              registra un tag de version un mensaje y el hash del commit donde
+              se va a agregar el tag NOTA-[no van los corchetes]
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git tag
+          <ul>
+            <li>muestra todos los tag creados</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git show-ref --tags
+          <ul>
+            <li>saber a que hash esta conectado un</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git push origin --tags
+          <ul>
+            <li>mandar un tag al repositorio de github</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git tag -d (nombre de tag)
+          <ul>
+            <li>borra un tag en consola pero en consola</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git push origin :refs/tags/(nombre del tag a borrar)
+          <ul>
+            <li>
+              borra un tag despues de borrarlo en el area de trabajo de consola
+            </li>
+          </ul>
+        </li>
+        <br />
+      </ol>
+      <hr />
+      <h2>Manejo de Ramas</h2>
+      <ol>
+        <li>
+          git checkout
+          <ul>
+            <li>sirve para cambiar de ramas</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git branch
+          <ul>
+            <li>sirve para crear una rama</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git show-branch
+          <ul>
+            <li>muestra ramas que existe y su historia</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git show-branch --all
+          <ul>
+            <li>muestra ramas que existe y toda su historia</li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          git push origin (nombre de cabecera)(pueden ser mas de 1 separadas con
+          un espacio)
+          <ul>
+            <li>sirve para mandar al repositorio remoto de github una rama</li>
+          </ul>
+        </li>
+        <br />
+      </ol>
+      <hr />
+      <h2></h2>
+      <ol>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+
+    <footer class="container text-center">CopyRight 2021</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
