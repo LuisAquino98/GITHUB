@@ -1,4 +1,4 @@
-### Hi there 👋
+### Comandos iniciales github 👋
 
 <!--
 **kazuwin76/kazuwin76** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
