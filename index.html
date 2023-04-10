@@ -23,6 +23,7 @@
               >Git y GitHub</a
             >
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="Multiples_Entornos.html"
               >Multiples Entornos</a
@@ -38,7 +39,7 @@
       <h1>Git y GitHub</h1>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="flush-headingOne">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -47,21 +48,22 @@
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-              Para borrar un archivo
+              git init
             </button>
           </h2>
           <div
             id="flush-collapseOne"
             class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              git rm y nombre del archivo pero queda en catche
+              Inicializa un nuevo repositorio de Git en el directorio actual.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="flush-headingTwo">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -70,24 +72,23 @@
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
             >
-              Accordion Item #2
+              git add
             </button>
           </h2>
           <div
             id="flush-collapseTwo"
             class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+              Agrega cambios al área de preparación (staging) para ser
+              confirmados.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="flush-headingThree">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -96,292 +97,643 @@
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              Accordion Item #3
+              git commit
             </button>
           </h2>
           <div
             id="flush-collapseThree"
             class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body. Nothing more exciting happening here
-              in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              Crea una nueva confirmación (commit) con los cambios en el área de
+              preparación (staging).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              git status
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Muestra el estado actual de los archivos en el repositorio Git.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              git pull
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Obtiene los cambios más recientes del repositorio remoto y los
+              fusiona con la rama local actual.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              git push
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Envía los cambios locales confirmados a un repositorio remoto.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeven"
+            >
+              Manejo de ramas
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSeven"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ol>
+                <li>
+                  git checkout
+                  <ul>
+                    <li>sirve para cambiar de ramas</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git branch
+                  <ul>
+                    <li>sirve para crear una rama</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git show-branch
+                  <ul>
+                    <li>muestra ramas que existe y su historia</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git show-branch --all
+                  <ul>
+                    <li>muestra ramas que existe y toda su historia</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git push origin (nombre de cabecera)(pueden ser mas de 1
+                  separadas con un espacio)
+                  <ul>
+                    <li>
+                      sirve para mandar al repositorio remoto de github una rama
+                    </li>
+                  </ul>
+                </li>
+                <br />
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEight"
+              aria-expanded="false"
+              aria-controls="flush-collapseEight"
+            >
+              Para borrar un archivo
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingEight"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              git rm y nombre del archivo pero queda en catche
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseNine"
+              aria-expanded="false"
+              aria-controls="flush-collapseNine"
+            >
+              git checkout
+            </button>
+          </h2>
+          <div
+            id="flush-collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingNine"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Cambia a una rama o commit específico en el repositorio.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTen"
+              aria-expanded="false"
+              aria-controls="flush-collapseTen"
+            >
+              git merge
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Fusiona cambios de una rama a otra en el repositorio.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEleven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEleven"
+              aria-expanded="false"
+              aria-controls="flush-collapseEleven"
+            >
+              git fetch
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEleven"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingEleven"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Obtiene los cambios más recientes del repositorio remoto, pero no
+              los fusiona con la rama local actual. Útil para ver los cambios
+              antes de fusionarlos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwelve">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwelve"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwelve"
+            >
+              sirve para ver la historia de un archivo
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwelve"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwelve"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">git log "nombre de archivo"</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThirteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThirteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseThirteen"
+            >
+              git clone
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThirteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThirteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Crea una copia local de un repositorio remoto en tu máquina.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFourteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFourteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseFourteen"
+            >
+              para borrar un archivo pero del catche que esta en staging
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFourteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFourteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              git rm --cached y nombre del archivo con la extension
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFifteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFifteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseFifteen"
+            >
+              sirve para ver los cambios de un archivo
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFifteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFifteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">git show nombre del archivo</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSixteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseSixteen"
+            >
+              sirve para eliminar una rama la d es de delete
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSixteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSixteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">git branch -d (nombre de la rama)</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeventeen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeventeen"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeventeen"
+            >
+              Referente ala Configuración
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeventeen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSeventeen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ol>
+                <li>
+                  para revisar la configuracion
+                  <ul>
+                    <li>git config</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  para la confiiguracion por defecto y lo que nos falta
+                  <ul>
+                    <li>con = git config --list</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  Para la ubicacion de la configuracion
+                  <ul>
+                    <li>git config --list --show-origin</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  para cambiar todos los usuarios globales
+                  <ul>
+                    <li>git config ---global</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEighteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEighteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseEighteen"
+            >
+              para salir de la interfaz del commit basta con apretar
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEighteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingEighteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              esc+shift+z+z, o q depende la interfaz
+            </div>
+          </div>
+        </div>
+        <br />
+        <h2>Tags y Versiones</h2>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNineteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseNineteen"
+              aria-expanded="false"
+              aria-controls="flush-collapseNineteen"
+            >
+              Referente con el historial de los registros
+            </button>
+          </h2>
+          <div
+            id="flush-collapseNineteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingNineteen"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ol>
+                <li>
+                  git log
+                  <ul>
+                    <li>
+                      muestra el historial de los registros(commits) del
+                      proyecto con sus respectivos autores, hora especifica y
+                      descripciones(en caso de tenerlos)
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git log --all
+                  <ul>
+                    <li>
+                      muestra todo el historial de los registros del proyecto
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git log --all --graph
+                  <ul>
+                    <li>muestra con rayas las ramas</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git log --all --graph --decorate --oneline
+                  <ul>
+                    <li>
+                      muestra todo el historial de los registro de todos los
+                      commits de una forma grafica y ordenada
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  podemos meter el comando en un alias , alias historyg =
+                  <strong>"git log --all --graph --decorate --oneline"</strong>
+                  <ul>
+                    <li>
+                      establece u
+                      <h2></h2>
+                      <ol>
+                        <li>
+                          <ul>
+                            <li></li>
+                          </ul>
+                        </li>
+                      </ol>
+                      alias historyg para el comando puesto ahi para que
+                      escribiendo historyg se ejecute el comando completo
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git log -$numero
+                  <ul>
+                    <li>muestra los ultimos $numero commits realizados</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git log --stat
+
+                  <ul>
+                    <li>
+                      muestra los cambios especificos de cada archivo de acuerdo
+                      a los commits
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwenty">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwenty"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwenty"
+            >
+              Referente a Tags
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwenty"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwenty"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ol>
+                <br />
+                <li>
+                  git tag -a [v0.1] -m "mensaje" [codigo commit se saca en log]
+                  <ul>
+                    <li>
+                      registra un tag de version un mensaje y el hash del commit
+                      donde se va a agre
+                      <h2></h2>
+                      <ol>
+                        <li>
+                          <ul>
+                            <li></li>
+                          </ul>
+                        </li>
+                      </ol>
+                      gar el tag NOTA-[no van los corchetes]
+                    </li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git tag
+                  <ul>
+                    <li>muestra todos los tag creados</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git show-ref --tags
+                  <ul>
+                    <li>saber a que hash esta conectado un</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git push origin --tags
+                  <ul>
+                    <li>mandar un tag al repositorio de github</li>
+                  </ul>
+                </li>
+                <h2></h2>
+                <ol>
+                  <li>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ol>
+                <br />
+                <li>
+                  git tag -d (nombre de tag)
+                  <ul>
+                    <li>borra un tag en consola pero en consola</li>
+                  </ul>
+                </li>
+                <br />
+                <li>
+                  git push origin :refs/tags/(nombre del tag a borrar)
+                  <ul>
+                    <li>
+                      borra un tag despues de borrarlo en el area de trabajo de
+                      consola
+                    </li>
+                  </ul>
+                </li>
+                <br />
+              </ol>
             </div>
           </div>
         </div>
       </div>
-      <ol>
-        <li>
-          para borrar un archivo <br />
-          <ul>
-            <li>git rm y nombre del archivo pero queda en catche</li>
-          </ul>
-        </li>
-        <li>
-          para borrar un archivo pero del catche que esta en staging
-          <ul>
-            <li>git rm --cached y nombre del archivo con la extension</li>
-          </ul>
-        </li>
-
-        <li>
-          para revisar la configuracion
-          <ul>
-            <li>git config</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          para la confiiguracion por defecto y lo que nos falta
-          <ul>
-            <li>con = git config --list</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          Para la ubicacion de la configuracion
-          <ul>
-            <li>git config --list --show-origin</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          para cambiar todos los usuarios globales
-          <ul>
-            <li>git config ---global</li>
-          </ul>
-        </li>
-        <br />
-        <!-- primer cambio-->
-        <li>
-          git log "nombre de archivo"
-          <ul>
-            <li>sirve para ver la historia de un archivo</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git show nombre del archivo
-          <ul>
-            <li>sirve para ver los cambios de un archivo</li>
-          </ul>
-        </li>
-        <br />
-
-        <li>
-          git branch
-          <ul>
-            <li>sirve para crear una rama</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git branch -d (nombre de la rama)
-          <ul>
-            <li>sirve para eliminar una rama la d es de delete</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git checkout
-          <ul>
-            <li>sirve para cambiar de ramas</li>
-          </ul>
-        </li>
-        <br />
-        <hr />
-        <p>
-          para salir de la interfaz del commit basta con apretar
-          <br />esc+shift+z+z, o q depende la interfaz
-        </p>
-        <hr />
-        <p>
-          <strong
-            >nuevo cambio de verificacion de un push cambio desde luis
-            aquino</strong
-          >
-        </p>
-        <hr />
-
-        <p style="color: steelblue; font-size: 1.2em">
-          Para crear un alias permanente Cambiar de bash en el code con <br />
-          <strong>Code .bashrc .zshrc</strong><br />
-          Ya que al usar oh-my-zsh se cambia de bash Ahí meter el alias asi:
-          <br />
-          <strong>Alias (nombre del alias)=’comando’</strong>
-        </p>
-        <hr />
-      </ol>
-      <h2>Tags y Versiones</h2>
-      <ol>
-        <li>
-          git log
-          <ul>
-            <li>
-              muestra el historial de los registros(commits) del proyecto con
-              sus respectivos autores, hora especifica y descripciones(en caso
-              de tenerlos)
-            </li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git log --all
-          <ul>
-            <li>muestra todo el historial de los registros del proyecto</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git log --all --graph
-          <ul>
-            <li>muestra con rayas las ramas</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git log --all --graph --decorate --oneline
-          <ul>
-            <li>
-              muestra todo el historial de los registro de todos los commits de
-              una forma grafica y ordenada
-            </li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          podemos meter el comando en un alias , alias historyg =
-          <strong>"git log --all --graph --decorate --oneline"</strong>
-          <ul>
-            <li>
-              establece un alias historyg para el comando puesto ahi para que
-              escribiendo historyg se ejecute el comando completo
-            </li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git log -$numero
-          <ul>
-            <li>muestra los ultimos $numero commits realizados</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git log --stat
-          <ul>
-            <li>
-              muestra los cambios especificos de cada archivo de acuerdo a los
-              commits
-            </li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git tag -a [v0.1] -m "mensaje" [codigo commit se saca en log]
-          <ul>
-            <li>
-              registra un tag de version un mensaje y el hash del commit donde
-              se va a agregar el tag NOTA-[no van los corchetes]
-            </li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git tag
-          <ul>
-            <li>muestra todos los tag creados</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git show-ref --tags
-          <ul>
-            <li>saber a que hash esta conectado un</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git push origin --tags
-          <ul>
-            <li>mandar un tag al repositorio de github</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git tag -d (nombre de tag)
-          <ul>
-            <li>borra un tag en consola pero en consola</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git push origin :refs/tags/(nombre del tag a borrar)
-          <ul>
-            <li>
-              borra un tag despues de borrarlo en el area de trabajo de consola
-            </li>
-          </ul>
-        </li>
-        <br />
-      </ol>
-      <hr />
-      <h2>Manejo de Ramas</h2>
-      <ol>
-        <li>
-          git checkout
-          <ul>
-            <li>sirve para cambiar de ramas</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git branch
-          <ul>
-            <li>sirve para crear una rama</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git show-branch
-          <ul>
-            <li>muestra ramas que existe y su historia</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git show-branch --all
-          <ul>
-            <li>muestra ramas que existe y toda su historia</li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          git push origin (nombre de cabecera)(pueden ser mas de 1 separadas con
-          un espacio)
-          <ul>
-            <li>sirve para mandar al repositorio remoto de github una rama</li>
-          </ul>
-        </li>
-        <br />
-      </ol>
-      <hr />
-      <h2></h2>
-      <ol>
-        <li>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ol>
     </main>
-
-    <footer class="container text-center">CopyRight 2021</footer>
+    <footer class="container text-center footer fixed-bottom">
+      CopyRight 2021
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
